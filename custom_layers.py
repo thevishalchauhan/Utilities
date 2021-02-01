@@ -40,7 +40,7 @@ class SimpleDense(Layer):
   def call(self,inputs):
     return tf.matmul(inputs,self.w) + self.b
  
- my_dense = SimpleDense(units=1)
+my_dense = SimpleDense(units=1)
 
 x = tf.ones((1,1))
 y = my_dense(x)
